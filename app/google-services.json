@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805094707366",
+    "project_id": "lovemyplanet-db4d4",
+    "storage_bucket": "lovemyplanet-db4d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805094707366:android:aa5a636333b5895c462467",
+        "android_client_info": {
+          "package_name": "com.example.lovemyplanet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805094707366-ccno74k551jovl48scsc3t18shmcs0s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvVeBSnfPty3lqR6Ox7sm-2GCXrvPFB1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805094707366-ccno74k551jovl48scsc3t18shmcs0s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

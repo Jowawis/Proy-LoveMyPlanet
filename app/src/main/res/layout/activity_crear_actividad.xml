@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Crear Actividad"
+                style="@style/label"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImgPhoto"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:src="@color/colorLightGray"
+                    app:civ_circle_background_color="@color/colorWhite"
+                    app:civ_border_color="@color/colorGray"
+                    app:civ_border_width="5dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="20dp"
+                    />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorWhite"
+                    android:src="@drawable/icon_camera_white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginStart="60dp"
+                    />
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="30dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                app:hintEnabled="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/editEmail"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre de la actividad"
+                    android:textSize="14sp"
+
+
+                    ></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="3dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:counterEnabled="true"
+                app:hintEnabled="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/editPass"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:maxLines="10"
+                    android:maxLength="150"
+                    android:singleLine="false"
+                    android:gravity="top"
+
+                    android:scrollbars="vertical"
+                    android:id="@+id/txtDescrip"
+                    android:hint="Descripción de la actividad"
+                    android:textSize="14sp"
+                    android:inputType="textMultiLine"
+
+
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="3dp"
+                app:hintEnabled="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPuntos"
+                    android:hint="Puntos"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Registrar actividad"
+                style="@style/btnPrimary"
+
+                ></Button>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
